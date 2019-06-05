@@ -24,7 +24,7 @@ router.post('/check', function(req, res, next) {
       res.send({msg: '403'});
     }
   });
-});
+}); 
 
 router.post('/datos', function(req, res, next) {
   const id = jwt.verify(req.body.id, SECRET);
